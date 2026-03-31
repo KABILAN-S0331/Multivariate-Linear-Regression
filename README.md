@@ -58,6 +58,7 @@ print(regression.predict([[3300,1300]]))
 ## Output:
 <img width="720" height="257" alt="image" src="https://github.com/user-attachments/assets/e5bbeb76-fcb2-439d-a957-eef81667cd15" />
 
+<img width="881" height="657" alt="image" src="https://github.com/user-attachments/assets/8c8c5fe7-8aeb-4550-afd9-5daa5727703d" />
 
 
 ## Result
