@@ -22,35 +22,24 @@ Developed by :Kabilan S
 Register no : 212225230119
 
 import numpy as np
-
-# Example data
 Weight = np.array([790, 1160, 929, 865, 1140])
 Volume = np.array([1000, 1200, 900, 1100, 1300])
 CO2 = np.array([99, 95, 90, 97, 96])
-
-# Simple linear regression using least squares (basic idea)
 X = np.column_stack((Weight, Volume))
 X = np.c_[np.ones(X.shape[0]), X]  # add intercept
-
-# Compute coefficients using normal equation
 beta = np.linalg.inv(X.T @ X) @ X.T @ CO2
-
 print("Coefficients:", beta[1:])
 print("Intercept:", beta[0])
-
-# Prediction
 new = np.array([1, 3300, 1300])
 pred = new @ beta
-
 print("Predicted CO2:", pred)
-
-
 
 
 
 ```
 ## Output:
-![WhatsApp Image 2026-03-25 at 7 28 11 PM](https://github.com/user-attachments/assets/e6fc8f80-f26a-4ba8-bc64-914f1a728ff4)
+<img width="594" height="293" alt="image" src="https://github.com/user-attachments/assets/8cf04b69-eff0-4562-bf90-6b228d84421a" />
+
 
 ## Result
 Thus the multivariate linear regression is implemented and predicted the output using python program.
